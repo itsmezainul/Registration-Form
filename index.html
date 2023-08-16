@@ -38,36 +38,56 @@
         <form action="">
           <tr>
             <td><label for="studentName">Student Name</label></td>
-            <td><input type="text" name="studentName" id="studentName" /></td>
+            <td>
+              <input type="text" name="studentName" id="studentName" required />
+            </td>
           </tr>
           <tr>
             <td><label for="fatherName">Father Name</label></td>
-            <td><input type="text" name="fatherName" id="fatherName" /></td>
+            <td>
+              <input type="text" name="fatherName" id="fatherName" required />
+            </td>
           </tr>
           <tr>
             <td><label for="motherName">Mother Name</label></td>
-            <td><input type="text" name="motherName" id="motherName" /></td>
+            <td>
+              <input type="text" name="motherName" id="motherName" required />
+            </td>
           </tr>
           <tr>
             <td><label for="dob">Date of Birth</label></td>
-            <td><input type="date" name="dob" id="dob" /></td>
+            <td><input type="date" name="dob" id="dob" required /></td>
           </tr>
           <tr>
             <td><label for="gender">Gender</label></td>
             <td>
               <label for="male">Male</label>
-              <input type="radio" name="gender" id="male" />
+              <input
+                type="radio"
+                name="gender"
+                id="male"
+                value="male"
+                required
+              />
               <label for="Female">Female</label>
-              <input type="radio" name="gender" id="Female" />
+              <input type="radio" name="gender" id="Female" value="female" />
             </td>
           </tr>
           <tr>
             <td><label for="email">Email ID</label></td>
-            <td><input type="email" name="email" id="email" /></td>
+            <td><input type="email" name="email" id="email" required /></td>
           </tr>
           <tr>
             <td><label for="number">Mobile No.</label></td>
-            <td><input type="number" name="number" id="number" /></td>
+            <td>
+              <input
+                type="tel"
+                name="number"
+                id="number"
+                pattern="[0-9]{10}"
+                required
+              />
+            </td>
           </tr>
           <tr>
             <td><label for="Address">Address</label></td>
@@ -77,16 +97,17 @@
                 id="Address"
                 cols="19"
                 rows="4"
+                required
               ></textarea>
             </td>
           </tr>
           <tr>
             <td><label for="state">State</label></td>
-            <td><input type="text" name="state" id="state" /></td>
+            <td><input type="text" name="state" id="state" required /></td>
           </tr>
           <tr>
             <td><label for="city">City</label></td>
-            <td><input type="text" name="city" id="city" /></td>
+            <td><input type="text" name="city" id="city" required /></td>
           </tr>
           <tr>
             <td></td>
